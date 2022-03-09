@@ -12,12 +12,12 @@ spring:
       path: /h2-console
       settings:
         web-allow-others: true
-    datasource:
-      platform: h2
-      driver-class-name: org.h2.Driver
-      url: "jdbc:h2:mem:testdb;MODE=MYSQL;DB_CLOSE_DELAY=-1"
-      username: sa
-      password:
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: "jdbc:h2:mem:testdb;MODE=MYSQL;DB_CLOSE_DELAY=-1"
+    username: sa
+    password:
 
 logging.level:
   org.hibernate.SQL: debug
